@@ -1,5 +1,5 @@
-export const Header = ({ id, title }) => (
-  <div className="header-wrapper" key={id}>
+export const Header = ({ title }) => (
+  <div className="header-wrapper">
     <h2>{title}</h2>
   </div>
 );

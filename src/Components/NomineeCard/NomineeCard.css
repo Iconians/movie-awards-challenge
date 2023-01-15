@@ -1,0 +1,30 @@
+.nominee-card-wrapper {
+  background-color: #009B86;
+  height: 400px;
+  width: 400px;
+  margin: 50px;
+  padding-bottom: 20px;
+}
+
+.nominee-card-wrapper:hover {
+  background-color: #34AC9C;
+  color: #CCCCCC;
+}
+
+.image-wrapper > img {
+  height: 300px;
+  width: 300px;
+}
+
+.btn-wrapper > input {
+  background-color: #009B86;
+  width: 300px;
+  color: #FFFFFF;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn-wrapper > input:hover {
+  background-color: #34AC9C;
+} 

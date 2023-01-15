@@ -1,7 +1,7 @@
 import { NomineeSelectionBtn } from "../NomineeSelectBtn/NomineeSelectionBtn";
+import "./NomineeCard.css";
 
-export const NomineeCard = ({ title, img }) => {
-  console.log(img);
+export const NomineeCard = ({ title, img, id }) => {
   return (
     <div className="nominee-card-wrapper">
       <div className="nominee-name">
@@ -11,7 +11,7 @@ export const NomineeCard = ({ title, img }) => {
         <img src={`${img}`} alt="broke" />
       </div>
       <div className="btn-div">
-        <NomineeSelectionBtn />
+        <NomineeSelectionBtn title={title} id={id} />
       </div>
     </div>
   );
