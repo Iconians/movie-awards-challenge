@@ -13,9 +13,17 @@
 .modal-body {
   width: 500px;
   height: 300px;
-  cursor: pointer;
   background-color: #FFFFFF;
   color: black;
+  position: relative;
 }
 
 .heading-wrapper {margin-top: 35px;}
+
+.close-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}

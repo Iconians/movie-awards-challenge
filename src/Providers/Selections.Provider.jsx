@@ -4,6 +4,7 @@ export const SelectionsContext = createContext({});
 
 export const SelectionsProvider = ({ children }) => {
   const [selections, setSelections] = useState([]);
+  const [openModal, setOpenModal] = useState(false);
 
   const updateSelection = (id, selection) => {
     const updateNominee = selections.map((nominee) => {
@@ -29,6 +30,8 @@ export const SelectionsProvider = ({ children }) => {
       value={{
         selectedNominee,
         selections,
+        openModal,
+        setOpenModal,
       }}
     >
       {children}
@@ -41,5 +44,7 @@ export const useSelectionsContext = () => {
   return {
     selectedNominee: context.selectedNominee,
     selections: context.selections,
+    openModal: context.openModal,
+    setOpenModal: context.setOpenModal,
   };
 };

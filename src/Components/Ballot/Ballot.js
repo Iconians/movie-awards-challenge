@@ -4,17 +4,18 @@ import "./Ballot.css"
 import { Header } from '../Header/Header';
 import { NomineeCard } from '../NomineeCard/NomineeCard';
 import { SuccessModal } from '../SuccessModal/SuccesModal';
+import { useSelectionsContext } from '../../Providers/Selections.Provider';
 
 
 const Ballot = () => {
   const [nominees, setNominees] = useState([])
-  const [openModal, setopenModal] = useState(false)
+  const { openModal, setOpenModal } = useSelectionsContext()
   useEffect(() => {
     api.getBallotData()
     .then((data) => setNominees(data.items))
   }, [])
   const submitBallot = () => {
-    setopenModal(true)
+    setOpenModal(true)
   }
   return (
     <div className='ballot'>

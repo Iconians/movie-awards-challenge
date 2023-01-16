@@ -11,6 +11,11 @@
   color: #CCCCCC;
 }
 
+.nominee-name > h3 {
+  width: 380px;
+  margin: 10px auto 30px auto;
+}
+
 .image-wrapper > img {
   height: 300px;
   width: 300px;
