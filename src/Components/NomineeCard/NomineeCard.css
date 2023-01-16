@@ -1,5 +1,6 @@
 .nominee-card-wrapper {
   background-color: #009B86;
+  box-shadow: 5px 8px 5px #009;
   height: 460px;
   width: 400px;
   margin: 50px;
@@ -9,6 +10,7 @@
 
 .nominee-card-wrapper:hover {
   background-color: #34AC9C;
+  box-shadow: 15px 16px 15px #009;
   color: #CCCCCC;
 }
 
