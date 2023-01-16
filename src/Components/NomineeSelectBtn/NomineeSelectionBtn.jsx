@@ -1,6 +1,6 @@
 import { useSelectionsContext } from "../../Providers/Selections.Provider";
 
-export const NomineeSelectionBtn = ({ id, title }) => {
+export const NomineeSelectionBtn = ({ id, title, selected }) => {
   const nominee = title;
   const { selectedNominee } = useSelectionsContext();
   const saveSelection = ({ target: { id } }) => {

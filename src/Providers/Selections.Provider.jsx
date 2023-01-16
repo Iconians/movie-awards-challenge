@@ -28,6 +28,7 @@ export const SelectionsProvider = ({ children }) => {
     <SelectionsContext.Provider
       value={{
         selectedNominee,
+        selections,
       }}
     >
       {children}
@@ -39,5 +40,6 @@ export const useSelectionsContext = () => {
   const context = useContext(SelectionsContext);
   return {
     selectedNominee: context.selectedNominee,
+    selections: context.selections,
   };
 };

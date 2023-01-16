@@ -8,3 +8,21 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.submit-ballot-btn {
+  margin: auto 10px 10px auto;
+}
+
+.submit-ballot-btn > button {
+  background-color: #009B86;
+  color: #FFFFFF;
+  padding: 40px;
+  width: 400px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.submit-ballot-btn > button:hover {
+  color: #CCCCCC;
+  background-color:  #34AC9C;
+} 
