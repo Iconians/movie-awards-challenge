@@ -29,7 +29,9 @@
 } 
 
 @media (max-width: 1500px) {
-  .nominee-cards-container {justify-content: space-evenly;}
+  .nominee-cards-container {
+    justify-content: space-evenly;
+  }
 }
 
 @media (max-width: 1000px) {
