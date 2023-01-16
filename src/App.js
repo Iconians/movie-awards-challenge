@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <SelectionsProvider>
-      <Ballot />
+        <Ballot />
       </SelectionsProvider>
     </div>
   );
