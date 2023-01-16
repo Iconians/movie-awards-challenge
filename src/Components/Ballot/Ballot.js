@@ -24,21 +24,21 @@ const Ballot = () => {
       </div>
         {nominees.map((item, i) => ( 
           <>
-          <Header title={item.title} key={item.id} />
-          <div className='nominee-cards-container'>
-          {item.items.map((nominee) => (
-            <NomineeCard id={item.id} title={nominee.title} img={nominee.photoUrL} key={nominee.id}  />
-          ))}
-          {!nominees[i + 1] ? 
-            <div className='submit-ballot-btn'>
-              <button onClick={submitBallot}>Submit Ballot</button>
-            </div>
-          :
-          null
-          }
-          </div> 
-          </> 
-          ))
+            <Header title={item.title} key={item.id} />
+            <div className='nominee-cards-container'>
+              {item.items.map((nominee) => (
+                <NomineeCard id={item.id} title={nominee.title} img={nominee.photoUrL} key={nominee.id}  />
+              ))}
+              {!nominees[i + 1] ? 
+                <div className='submit-ballot-btn'>
+                  <button onClick={submitBallot}>Submit Ballot</button>
+                </div>
+              :
+              null
+              }
+            </div> 
+            </> 
+        ))
         }
         <SuccessModal />
     </div>
