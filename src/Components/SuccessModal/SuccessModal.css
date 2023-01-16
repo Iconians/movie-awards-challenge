@@ -1,0 +1,21 @@
+.success-modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-body {
+  width: 500px;
+  height: 300px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.heading-wrapper {margin-top: 35px;}

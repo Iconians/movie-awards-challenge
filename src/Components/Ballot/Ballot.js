@@ -3,14 +3,19 @@ import api from '../../Api/Api';
 import "./Ballot.css"
 import { Header } from '../Header/Header';
 import { NomineeCard } from '../NomineeCard/NomineeCard';
+import { SuccessModal } from '../SuccessModal/SuccesModal';
 
 
 const Ballot = () => {
   const [nominees, setNominees] = useState([])
+  const [openModal, setopenModal] = useState(false)
   useEffect(() => {
     api.getBallotData()
     .then((data) => setNominees(data.items))
   }, [])
+  const submitBallot = () => {
+    setopenModal(true)
+  }
   return (
     <div className='ballot'>
       <div>
@@ -25,7 +30,7 @@ const Ballot = () => {
           ))}
           {!nominees[i + 1] ? 
             <div className='submit-ballot-btn'>
-              <button>Submit Ballot</button>
+              <button onClick={submitBallot}>Submit Ballot</button>
             </div>
           :
           null
@@ -34,7 +39,7 @@ const Ballot = () => {
           </> 
           ))
         }
-      
+      {openModal ? <SuccessModal /> :null}
     </div>
   )
 }
