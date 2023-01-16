@@ -1,8 +1,6 @@
-.App {
+.App, html {
   text-align: center;
   font-family: "Roboto";
   background-color: #0D2436;
   color: #FFFFFF;
 }
-
-

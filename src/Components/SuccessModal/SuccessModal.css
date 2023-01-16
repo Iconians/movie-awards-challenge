@@ -8,6 +8,9 @@
   justify-content: center;
   align-items: center;
   background: rgba(0,0,0,0.8);
+  transition: all 0.35s ease-in;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .modal-body {
@@ -26,4 +29,9 @@
   top: 20px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
 }

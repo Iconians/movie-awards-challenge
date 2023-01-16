@@ -9,7 +9,7 @@ import { useSelectionsContext } from '../../Providers/Selections.Provider';
 
 const Ballot = () => {
   const [nominees, setNominees] = useState([])
-  const { openModal, setOpenModal } = useSelectionsContext()
+  const { setOpenModal } = useSelectionsContext()
   useEffect(() => {
     api.getBallotData()
     .then((data) => setNominees(data.items))
@@ -40,7 +40,7 @@ const Ballot = () => {
           </> 
           ))
         }
-      {openModal ? <SuccessModal /> :null}
+        <SuccessModal />
     </div>
   )
 }

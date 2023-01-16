@@ -1,9 +1,10 @@
 .nominee-card-wrapper {
   background-color: #009B86;
-  height: 400px;
+  height: 460px;
   width: 400px;
   margin: 50px;
-  padding-bottom: 20px;
+  position: relative;
+  border-radius: 5px;
 }
 
 .nominee-card-wrapper:hover {
@@ -19,20 +20,35 @@
 .image-wrapper > img {
   height: 300px;
   width: 300px;
+  border-radius: 20px;
+}
+
+.btn-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .btn-wrapper > input {
   background-color: #009B86;
   width: 300px;
+  height: 60px;
   color: #FFFFFF;
   border: none;
   font-size: 16px;
-  margin-top: 10px;
+  margin: auto;
   cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .btn-wrapper > input:hover {
   color: #CCCCCC;
 } 
 
-.selectedCard {background-color: #009B86}
+.selectedCard {
+  background-color:  #34AC9C;
+  color: #CCCCCC;
+
+}
