@@ -50,5 +50,11 @@
 .selectedCard {
   background-color:  #34AC9C;
   color: #CCCCCC;
+}
 
+@media (max-width: 1000px) {
+  .nominee-card-wrapper {
+    margin: auto;
+    margin-bottom: 50px;
+  }
 }

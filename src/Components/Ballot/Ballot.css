@@ -1,5 +1,4 @@
 .header-wrapper {
-  width: 1200px;
   margin-left: 50px;
   text-align: start;
 }
@@ -28,3 +27,18 @@
   color: #CCCCCC;
   background-color:  #34AC9C;
 } 
+
+@media (max-width: 1000px) {
+  .nominee-cards-container {
+    flex-direction: column;
+  }
+
+  .submit-ballot-btn {
+    margin: auto;
+  }
+
+  .header-wrapper {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
